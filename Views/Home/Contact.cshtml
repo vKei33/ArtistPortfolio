@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = @Localizer["Контакт"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="section my-5 px-2">
+    <div class="row">
+        <div class="col-sm-12 col-md-5">
+            <div class="text-center">
+                <img src="~/images/contactImg.jpg" class="img-responsive w-75" alt="Martin Burovski">
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+            @if (CultureInfo.CurrentCulture.Name == "en-US")
+            {
+                <h2 class="mb-3"><strong>Contact Information</strong></h2>
+                <hr />
+                <p class="text-start">Contact me anytime if you have any questions.</p>
+                <h4>Martin Burovski</h4>
+                <div class="mt-5">
+                    <p>Phone Number:</p>
+                    <p class="text-primary">+389 70 111 222</p><br>
+                </div>
+                <div>
+                    <p>E-Mail Address:</p>
+                    <p class="text-primary">martin@gmail.com</p><br>
+                </div>
+            }
+            else
+            {
+                <h2 class="mb-3"><strong>Информации за контакт</strong></h2>
+                <hr />
+                <p class="text-start">Слободно контактирајте ме доколу имате било какви прашања.</p>
+                <h4>Мартин Буровски</h4>
+                <div class="mt-5 mb-4">
+                    <p>Телефонски број:</p>
+                    <p class="text-primary">+389 70 111 222</p>
+                </div>
+                <div>
+                    <p>Електронска пошта:</p>
+                    <a class="text-primary" href="mailto: abc@example.com">martin@gmail.com</a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
