@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Martin Burovski</title>
+    <title>@ViewData["Title"] - Burovski Art</title>
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -19,7 +19,7 @@
     <header class="header" id="header">
         <div class="top-header py-3">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="header-title text-dark fs-1" asp-controller="Home" asp-action="Index">@Localizer["Мартин Буровски"]</a>
+                <a class="header-title text-dark fs-1" asp-controller="Home" asp-action="Index">@Localizer["буровскиАрт"]</a>
                 @await Html.PartialAsync("_SelectLanguagePartial")
             </div>
         </div>
@@ -63,7 +63,7 @@
 
     <footer class="border-top py-4 footer text-muted">
         <div class="container">
-            &copy; 2023 - @Localizer["Мартин Буровски"]
+            &copy; 2023 - @Localizer["буровскиАрт"]
         </div>
     </footer>
 

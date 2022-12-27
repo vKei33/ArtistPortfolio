@@ -10,5 +10,5 @@ msgstr "Contact"
 msgid "Биографија"
 msgstr "Biography"
 
-msgid "Мартин Буровски"
-msgstr "Martin Burovski"
+msgid "буровскиАрт"
+msgstr "burovskiArt"

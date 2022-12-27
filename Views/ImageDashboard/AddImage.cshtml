@@ -47,18 +47,6 @@
     </div>
 
     <div class="form-group mb-3">
-        <label asp-for="PriceMKD" class="form-label">Цена (денари):</label>
-        <input type="text" asp-for="PriceMKD" class="form-control" placeholder="18.000">
-        <span asp-validation-for="PriceMKD" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label asp-for="PriceEUR" class="form-label">Цена (евра):</label>
-        <input type="text" asp-for="PriceEUR" class="form-control" placeholder="300">
-        <span asp-validation-for="PriceEUR" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
         <div class="form-check">
             <input class="form-check-input" asp-for="IsForSale" id="ForSale" type="radio" name="IsForSale" value="true">
             <label class="form-check-label" asp-for="IsForSale" for="ForSale">

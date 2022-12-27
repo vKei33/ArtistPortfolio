@@ -34,11 +34,6 @@ namespace ArtistPortfolio.Models.Models
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
 
-        [Column(TypeName = "varchar(20)")]
-        public string? PriceMKD { get; set; }
-        [Column(TypeName = "varchar(20)")]
-        public string? PriceEUR { get; set; }
-
         public string? ImageUrl { get; set; }
     }
 }

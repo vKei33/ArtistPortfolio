@@ -62,7 +62,7 @@ namespace ArtistPortfolio.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddImage([Bind("TitleMK,TitleEN,DescMK,DescEN,TechniqueMK,TechniqueEN,Format,PriceMKD,PriceEUR,ImageFile,IsForSale")] Image image)
+        public async Task<IActionResult> AddImage([Bind("TitleMK,TitleEN,DescMK,DescEN,TechniqueMK,TechniqueEN,Format,ImageFile,IsForSale")] Image image)
         {
             if (ModelState.IsValid)
             {
@@ -98,7 +98,7 @@ namespace ArtistPortfolio.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdateImage(long? id, [Bind("Id,TitleMK,TitleEN,DescMK,DescEN,TechniqueMK,TechniqueEN,Format,PriceMKD,PriceEUR,ImageFile,IsForSale")] Image image)
+        public async Task<IActionResult> UpdateImage(long? id, [Bind("Id,TitleMK,TitleEN,DescMK,DescEN,TechniqueMK,TechniqueEN,Format,ImageFile,IsForSale")] Image image)
         {
             if (id != image.Id)
             {
