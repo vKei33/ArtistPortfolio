@@ -403,3 +403,6 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+Data/Migrations/20221228114205_InitialMigration.cs
+Data/Migrations/20221228114205_InitialMigration.Designer.cs
+Data/Migrations/ApplicationDbContextModelSnapshot.cs
